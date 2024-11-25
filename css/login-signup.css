@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../images/loginSignupBg.jpg);
+    background-size: cover;
+    color: #333;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+/* Form Styles */
+.login-desc {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.login-desc h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.form-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: #333;
+    border-bottom: 1px solid #666;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container button {
+    justify-content: center;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-container button:hover {
+    background: #555;
+    transform: translateY(-2px);
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+.form-container p a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.form-container p a:hover {
+    color: #555;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cancel-btn {
+    background: #ccc;
+}
+
+#cancel-btn a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#cancel-btn:hover {
+    background: #bbb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .form-container {
+        margin: 20px auto;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn-container button,
+    .btn-container a {
+        margin-bottom: 10px;
+    }
+}
